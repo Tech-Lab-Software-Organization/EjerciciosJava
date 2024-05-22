@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class nivel1 {
-    private int puntaje;
+    public int puntaje;
     private String respuesta;
     private final String[] animales;
     private final Scanner ent;
@@ -20,6 +20,7 @@ public class nivel1 {
         if(respuesta.equals(animales[0]))
         {
             System.out.println("Correcto haz ganado 10 puntos");
+            puntaje +=10;
         }
         else{
             System.out.println("Incorrecto La respuesta es: " + animales[0]);
@@ -33,6 +34,7 @@ public class nivel1 {
         if(respuesta.equals(animales[1]))
         {
             System.out.println("Correcto haz ganado 10 puntos");
+            puntaje +=10;
         }
         else{
             System.out.println("Incorrecto La respuesta es: " + animales[1]);
