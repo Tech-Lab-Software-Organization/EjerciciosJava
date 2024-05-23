@@ -13,7 +13,9 @@ public class nivel1 {
         animales = new String[2];
         animales[0] = "perro";
         animales[1] = "gato";
+       
     }
+
 
     private void puntajePerro()
     {
