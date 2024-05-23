@@ -9,10 +9,11 @@ public class nivel2 {
     public nivel2() {
         puntaje = 0;
         ent = new Scanner(System.in);
-        animales = new String[4];
+        animales = new String[7];
         animales[4] = "elefante";
         animales[5] = "tigre";
         animales[3] = "hormiga";
+        animales[6] = "mosca";
 
     }
 
@@ -27,22 +28,31 @@ public class nivel2 {
         System.out.println("Es un animal pequeño");
         respuesta = ent.nextLine();
         hormiga();
+        System.out.println("Es un animal sucio");
+        puntajeMosca();
 
     }
 
     public void hormiga() {
         if (respuesta.equals(animales[3])) {
-            System.out.println("Correcto has ganado una hormiga mas 10 puntos");
-            puntaje += 10;
+            System.out.println("Correcto has ganado una hormiga mas 20 puntos");
+            puntaje += 20;
         } else {
             System.out.println("incorrecto la respuesta es: " + animales[3]);
             System.out.println("has perdido una hormiga y 5 puntos");
-            puntaje += 10;
+            puntaje -= 10;
         }
     }
 
-    public void pregunta2() {
-
+    public void puntajeMosca() {
+        if (respuesta.equals(animales[6])) {
+            System.out.println("Correcto has ganado una mosca mas 20 puntos");
+            puntaje += 20;
+        } else{
+            System.out.println("Incorrecto la respuesta es: " + animales[2]);
+            System.out.println("Has perdido una mosca y 5 puntos");
+            puntaje -= 10;
+        }
     }
 
     public void pregunta3() {
