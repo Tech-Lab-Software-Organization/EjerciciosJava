@@ -11,6 +11,7 @@ public class nivel2 {
         ent = new Scanner(System.in);
         animales = new String[4];
         animales[4] = "elefante";
+        animales[5] = "tigre";
       
     }
     
@@ -18,6 +19,10 @@ public class nivel2 {
         System.out.println("Es un animal grande que tiene una trompa");
         respuesta = ent.nextLine();
         puntajeElefante();
+
+        System.out.println( "Es un felino de franjas negras y naranjas");
+        respuesta = ent.nextLine();
+        pregunta3();
         
     }
     
@@ -30,7 +35,14 @@ public class nivel2 {
     }
 
     public void pregunta3() {
-        
+        if (respuesta.equals(animales[5])) {
+            System.out.println("Correcto, haz ganado 20 puntos");
+            puntaje += 20;
+            } else {
+            System.out.println("Incorrecto. La respuesta es: " + animales[5]);
+            System.out.println("Has perdido 10 puntos");
+            puntaje -= 10;
+            }
     }
         
     private void puntajeElefante() {
@@ -44,4 +56,3 @@ public class nivel2 {
         }
     }
 }
-
