@@ -36,11 +36,11 @@ public class nivel2 {
     private void puntajeElefante() {
         if (respuesta.equals(animales[4])) {
             System.out.println("Correcto, haz ganado 10 puntos");
-            puntaje += 10;
+            puntaje += 20;
         } else {
             System.out.println("Incorrecto. La respuesta es: " + animales[4]);
             System.out.println("Has perdido 5 puntos");
-            puntaje -= 5;
+            puntaje -= 10;
         }
     }
 }
